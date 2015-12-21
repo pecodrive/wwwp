@@ -1,0 +1,397 @@
+/*generic  */
+body{
+    overflow:scroll;
+    background-image:url("../matome/img/backimg.jpg")
+}
+a{
+    color: #222222;
+}
+header{
+    /* margin-top:20px; */
+}
+.au{
+    margin:0 auto;
+}
+.article img{
+    display:block;
+
+}
+.headlineimg{
+    padding:5px;
+}
+.headlineimg{
+    width:2px;
+}
+.headlinepanel{
+    margin:0;
+    padding:0;
+}
+.adspace{
+    margin-bottom:20px;
+    float:left;
+}
+.container-fluid{
+    padding-right:0px;
+    padding-left:0px;
+}
+.topnav{
+    margin-bottom:0;
+    margin-top:15px;
+}
+.headertop{
+    float:left;
+}
+.aru{
+    display:inline;
+}
+.nai{
+    display:none;
+}
+[class*="col-"]{
+    padding-right:5px;
+    padding-left:5px;
+
+}
+.panel,
+.topnav{
+    box-shadow:5px 5px 15px rgba(0,0,0,0.4),inset -1px -1px 1px  #fff;
+}
+.headertop{
+    margin-bottom:20px;
+}
+.loadlist{
+    color:#aaa;
+    background-color:#eee;
+    border:1px solid #ddd;
+    margin:20px 0;
+    cursor:pointer;
+    padding:5px;
+}
+
+.panel-default>.panel-heading{
+    color:white;
+    border-width:1px;
+    background-color:Orange;
+    background-image:url("../matome2/img/headerback.jpg");
+    border-color:Moccasin;
+}
+.panel-default>.panel-heading>h3{
+    font-weight:900;
+}
+.panel-body{
+    padding:10px;
+}
+.panel-default{
+    border-width:1px;
+    border-color:Moccasin;
+}
+.btn-default{
+    border-width:1px;
+    border-color:Moccasin;
+}
+.breadcrumb-nomargin{
+    margin: 0;
+}
+div.unkownpanel{
+    width:100%;
+}
+img.unkown{
+    width:100%;
+}
+
+/*listComp
+ * semecategory.php
+ * articlelist.php
+ * singlearticlelist.php
+ * singlenew.php
+ * indexnew.php
+ * */
+.imgBox,
+.disBox,
+.imgBox-Side,
+.disBox-Side,
+.imgBox-head,
+.disBox-head{
+    float:left;
+}
+.imgBox,
+.imgBox-Side,
+.imgBox-head{
+    width:20%;
+}
+.disBox,
+.disBox-Side,
+.disBox-head{
+    width:80%;
+}
+.disBox,
+.disBox-Side,
+.disBox-head,
+.disBox-rss{
+    font-size:100%;;
+    padding:0 0 0 10px;
+}
+.disBox-head{
+    overflow:scroll;
+    font-size:110%;
+}
+.cyounewdate{
+    font-size:80%;;
+}
+.disBox-rss{
+    padding:0 0 0 0px;
+}
+.disBox-rss .rsstitle{
+    width:15%;
+}
+.disBox-rss .rsslink{
+    width:85%;
+    padding:0 0 0 5px;
+    overflow:auto;
+}
+.disBox,
+.disBox-head,
+.disBox-Side
+{
+    overflow:auto;
+}
+div.list div.panel-body{
+    border-radius:5px;
+    border:2px solid #fff;
+}
+div.list-reco{
+    background-color:MintCream;
+}
+div.list-rss{
+    background-color:LemonChiffon;
+}
+div.list-new{
+    background-color:LavenderBlush;
+}
+div.list-cyounew{
+    /* background-color:LemonChiffon; */
+}
+div.list-seme{
+    background-color:#efc;
+}
+div.list-categoryarchive{
+    background-color:#efc;
+}
+div.reco-cate{
+    margin:0 5px 0 0;
+    float:left;
+}
+img.new,
+img.reco,
+img.new-single,
+img.reco-single,
+img.scate{
+    width:10%;
+    position:absolute;
+    box-shadow:5px 5px 15px rgba(0,0,0,0.4),inset -1px -1px 1px  #fff;
+    top:0;
+    left:0;
+}
+
+ul.list-group li.list-group-item:nth-child(even){
+    background-color:#efc;
+}
+#upper{
+    width:8%;
+    opacity:0.8;
+    visibility:hidden;
+    position:fixed;
+    right:5px;
+    bottom:60px;
+}
+.newdate,
+.recodata,
+.listcat,
+.rsstitle,
+.cyounewdate{
+    width:100%;
+    padding:1px 10px;
+    margin:0 0 4px 0;
+    background-color:Salmon;
+    color:#fff;
+    font-weight:900;
+    border-radius:5px;
+    float:left;
+}
+.cyounewdate{
+    background-color:Gold;
+    color:Tomato;
+}
+.recodata{
+    background-color:DarkTurquoise;
+}
+.listcat{
+    background-color:MediumSeaGreen;
+}
+.rsstitle{
+    background-color:MediumSeaGreen;
+}
+#rssimg{
+    width:50px;
+    height:auto;
+}
+
+/* article space */
+div.article img{
+    padding:5px 0;
+    max-width:100%;
+    height:auto;
+}
+.seme img{
+    padding:0px !important;
+}
+.adspace img{
+    padding:0px !important;
+}
+div.article,
+div.seme{
+    padding:10px;
+}
+div.anchor{
+    font-size:150%;
+    font-weight:900;
+}
+dt{
+    width:100%;
+    font-weight:400;
+    padding:1% 2%;
+    float:left;
+}
+dd{
+    width:100%;
+    padding:5% 5% 5% 5%;
+    overflow:hidden;
+    float:left;
+}
+.resbody{
+font-size:120%;
+
+}
+div.article dt{
+    border-radius:5px;
+    background-color:#efc;
+    background-color:#efc;
+}
+span.resno{
+    margin: 0 5px 0 0;
+    font-size:130%;
+    line-height:100%;
+    font-weight:900;
+    display:block;
+    float:left;
+}
+span.resname{
+    font-size:70%;
+    line-height:150%;
+    display:block;
+    color:gray;
+    margin: 0 5px 0 0;
+    float:left;
+}
+span.resdate{
+    font-size:70%;
+    line-height:150%;
+    display:block;
+    color:gray;
+    margin: 0 5px 0 0;
+    float:left;
+}
+span.resclock{
+    font-size:70%;
+    line-height:150%;
+    display:block;
+    color:gray;
+    margin: 0 5px 0 0;
+    float:left;
+}
+span.resid{
+    line-height:100%;
+    display:block;
+    margin: 0 5px 0 0;
+    float:left;
+}
+span.resmasterid{
+    color:green;
+}
+span.threadurldis{
+    width:98%;
+    display:block;
+    color:gray;
+    margin: 0% 1% 0 1%;
+    float:left;
+}
+span.threadurl{
+    width:98%;
+    display:block;
+    color:gray;
+    margin: 0 1% 2% 1%;
+    float:left;
+    overflow:auto;
+}
+span.threadurl>a{
+    color:gray;
+}
+span#categorylink{
+    width:98%;
+    display:block;
+    color:gray;
+    float:left;
+}
+a.category{
+    margin: 0 3% 0 0;
+    float:left;
+}
+span#categorylink>span.glyphicon{
+    margin: 0 3% 0 0;
+    float:left;
+}
+#form{
+    width:100%;
+    padding:2% 5%;
+    float:left;
+}
+#submit{
+    width:15%;
+    padding:2%;
+    cursor:pointer;
+    text-align:center;
+    border:1px solid #000;
+    background-color:Orange;
+    float:left;
+}
+#reset{
+    width:20%;
+    padding:2%;
+    margin-left:5%;
+    cursor:pointer;
+    text-align:center;
+    border:1px solid #000;
+    background-color:Orange;
+    float:left;
+}
+label,
+input{
+    width:100%;
+    margin-bottom:2%;
+    display:block;
+    float:left;
+}
+#erurl,
+#erfile,
+#ernote,
+#ermail,
+#submited
+{
+    visibility:hidden;
+}
+.site p{
+    margin:20px;
+}
+.site h2{
+    margin-bottom:20px;
+}
