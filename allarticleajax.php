@@ -1,4 +1,5 @@
 <?php
+//反映されてる？
 require_once(dirname(dirname(dirname(dirname(__file__)))) . '/wp-load.php');
 $request  = json_decode(file_get_contents( "php://input" ) , true);
 if(!wp_verify_nonce($request["nonce"])){
