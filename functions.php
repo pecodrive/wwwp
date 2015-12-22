@@ -21,7 +21,6 @@ function get_image() {
 }
 
 function get_image_noecho($id, $post) {
-    global $post, $posts;
     $category = get_the_category($id);
     $countCategory = count($category);
     $categoryid = mt_rand(0, $countCategory - 1);
@@ -31,7 +30,7 @@ function get_image_noecho($id, $post) {
     $filename = "tumb150_".$filename;
 
     $first_img = '';
-    $output = preg_match("/<img src=\"(http:\/\/[_a-z0-9:\/\.-]+\/([_a-z-0-9]+\.[jpegngifbmJPEGIFNGBM]{3,4}))\">/u", $post->post_content, $matches);
+    $output = preg_match("/<img src=\"(http:\/\/[_a-z0-9:\/\.-]+\/([_a-z-0-9]+\.[jpegngifbmJPEGIFNGBM]{3,4}))\">/u", $post, $matches);
     if(empty($matches[1])){
         $first_img = get_template_directory_uri()."/img/{$filename}";
     }else{
