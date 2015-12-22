@@ -44,9 +44,9 @@ aaa;
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"
                              role="button" aria-haspopup="true" aria-expanded="false">menu<span class="caret"></span></a>
                              <ul class="dropdown-menu">
-                            <li><a href="<?php bloginfo("url") ?>">ホーム</a></li>
-                            <li><a href="<?php echo bloginfo("url") . "/?page_id=1463" ?>">全記事</a></li>
-                                <!-- <li><a href="#">カテゴリ</a></li> -->
+                                <li><a href="<?php bloginfo("url") ?>">ホーム</a></li>
+                                <li><a href="<?php echo bloginfo("url") . "/?page_id=1463" ?>">全記事</a></li>
+                                <li><a href="<?php echo bloginfo("url") . "/?page_id=1466" ?>">カテゴリ</a></li>
                                 <!-- <li role="separator" class="divider"></li> -->
                                 <!-- <li><a href="#">記事ランキング</a></li> -->
                                 <!-- <li><a href="#">オススメ記事</a></li> -->
