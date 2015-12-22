@@ -45,7 +45,7 @@ aaa;
                              role="button" aria-haspopup="true" aria-expanded="false">menu<span class="caret"></span></a>
                              <ul class="dropdown-menu">
                             <li><a href="<?php bloginfo("url") ?>">ホーム</a></li>
-                            <li><a href="<?php echo bloginfo("url") . "/?page_id=2391" ?>">全記事</a></li>
+                            <li><a href="<?php echo bloginfo("url") . "/?page_id=1463" ?>">全記事</a></li>
                                 <!-- <li><a href="#">カテゴリ</a></li> -->
                                 <!-- <li role="separator" class="divider"></li> -->
                                 <!-- <li><a href="#">記事ランキング</a></li> -->
@@ -63,7 +63,7 @@ aaa;
             <div class="headerpanel panel">
                 <div class="panel-body">
             <?php
-                $args = array(  'posts_per_page'   => 2, 
+                $args = array(  'posts_per_page'   => 3, 
                     'orderby'          => 'date',
                     'order'            => 'DESC',
                     'post_type'        => array('post'),

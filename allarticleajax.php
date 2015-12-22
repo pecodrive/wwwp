@@ -5,7 +5,7 @@ if(!wp_verify_nonce($request["nonce"])){
     die();
 }
 // var_dump($request["aa"]);
-$per = 10;
+$per = 100;
 $offset = $request["aa"] * $per;
 $full = $wpdb->get_var("SELECT count(*) FROM {$wpdb->posts} WHERE post_status = 'publish' AND post_type = 'post'");
 $nocoli = $full - ($per + $offset);
@@ -28,9 +28,7 @@ $args = array(  'posts_per_page'   => $per,
                 'suppress_filters' => true
             );   
 $wp_query = new WP_Query($args);
-// var_dump($wp_query);
 $cq = count($wp_query->posts);
-// var_dump($cq);
 for ($i=0; $i < $cq; $i++) {
         $catHtml = "";
         $title = $wp_query->posts[$i]->post_title;
@@ -43,7 +41,8 @@ for ($i=0; $i < $cq; $i++) {
             $catHtml .= "<div class=\"reco-cate\">{$category[$j]->name}</div>";
         }
         $date = $wp_query->posts[$i]->post_date;
-        $img = "noimage.jpg";
+        // var_dump($wp_query->posts[$i]->post_content);
+        $img = get_image_noecho($wp_query->posts[$i]->ID, $wp_query->posts[$i]->post_content);
         $permalink = get_permalink($wp_query->posts[$i]->ID);
 
 $html .= <<<AAA
@@ -66,7 +65,7 @@ wp_reset_query();
 $data = ["html"=>$html, "flag"=>$flag, "nocoli"=>$nocoli];
 $json = json_encode($data);
 // var_dump($json);
-// header( "Conon_encodeent-Type: text/html; X-Content-Type-Options: nosniff; charset=utf-8" );
+header( "Conon_encodeent-Type: text/html; X-Content-Type-Options: nosniff; charset=utf-8" );
 header( "Content-Type: aplication/json; X-Content-Type-Options: nosniff; charset=utf-8" );
 echo $json;
 die();

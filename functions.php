@@ -20,7 +20,7 @@ function get_image() {
     echo $first_img;
 }
 
-function get_image_noecho($id) {
+function get_image_noecho($id, $post) {
     global $post, $posts;
     $category = get_the_category($id);
     $countCategory = count($category);

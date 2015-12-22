@@ -238,7 +238,7 @@ $(window).on("load resize",function(){
             var data = JSON.stringify({aa:globals.aa, nonce:globals.nonce});
             $.ajax({
                 type: "POST",
-                url: "http://192.168.56.10/wp-content/themes/matome2/allarticleajax.php",
+                url: "http://omoro.top/wp-content/themes/wwwp/allarticleajax.php",
                 data: data,
                 success: function(responce){
                     var stResponce = JSON.stringify(responce);
@@ -249,7 +249,34 @@ $(window).on("load resize",function(){
                     console.log(jsonResponce.flag);
                     // console.log(jsonResponce.html);
                     globals.flag = jsonResponce.flag;
-                    $(".moreload").append(jsonResponce.html);
+
+                   $(".moreload").append(jsonResponce.html);
+    wwidth = $(window).width();
+    if(wwidth < 420){
+        $(".moreload .disBox").css("font-size","80%");
+    }else if(wwidth >= 420 && wwidth < 768){
+        $(".disBox").css("font-size","100%");
+    }else if(wwidth >= 768 && wwidth < 992){
+        $(".disBox").css("font-size","80%");
+    }else if(wwidth >= 992 && wwidth < 1200){
+        $(".disBox").css("font-size","100%");
+    }else if(wwidth >= 1200){
+        $(".disBox").css("font-size","78%");
+    }
+         var ratio;
+        var listPanel = $(".listpanel");
+        if(listPanel.width() > 240){
+            ratio = 0.2;
+        }else if(listPanel.width() <= 240){
+            ratio = 0.3;
+        } 
+        var listPanelWidth= listPanel.width();
+        var imgBoxWidth = Math.floor(listPanelWidth * ratio) - 1;
+        var disBoxWidth = listPanelWidth - imgBoxWidth - 1;
+        $(".moreload .imgBox").css("width",imgBoxWidth);
+        $(".moreload .imgBox").css("height",imgBoxWidth);
+        $(".moreload .disBox").css("width",disBoxWidth);
+        $(".moreload .disBox").css("height",imgBoxWidth);
                     if(globals.flag === "aru"){
                         $(".aru").css("display","inline");
                         $(".nai").css("display","none");

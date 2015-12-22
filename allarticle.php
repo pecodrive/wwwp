@@ -4,7 +4,7 @@
     </div>
     <div class="list allarticle panel-body">
             <?php
-                $args = array(  'posts_per_page'   => 10, 
+                $args = array(  'posts_per_page'   => 100, 
                     'orderby'          => 'date',
                     'order'            => 'DESC',
                     'post_type'        => array('post'),
