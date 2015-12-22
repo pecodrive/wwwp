@@ -43,10 +43,10 @@ Template Name: カテゴリmenu
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 <?php get_template_part("articlelist"); ?>
 </div>
+</div>
 <div class="sidebar col-xs-12 col-sm-5 col-md-4 col-lg-4">
     <div class="col-xs-12">
         <?php get_template_part("linker"); ?>
     </div>
-</div>
 </div>
 <?php get_footer(); ?>
